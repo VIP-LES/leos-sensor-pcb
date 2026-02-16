@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.1
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -66,18 +66,22 @@
       "drc_exclusions": [
         [
           "net_conflict|123525000|72365000|39964c85-1dec-4829-82f9-87db177a0101|00000000-0000-0000-0000-000000000000",
-          "The SOIC version has no exposed pad."
-        ],
-        [
-          "net_conflict|132475000|70730000|0f048bba-e992-4082-b605-597fd50f4c5e|00000000-0000-0000-0000-000000000000",
-          "The SOIC version has no exposed pad."
-        ],
-        [
-          "silk_edge_clearance|200000000|63000000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|b72c7fc0-d94a-454b-a952-961bf612419e",
           ""
         ],
         [
-          "silk_edge_clearance|200000000|71220000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|044d4a62-4017-4787-9e81-87351c7f3fab",
+          "net_conflict|132475000|70730000|0f048bba-e992-4082-b605-597fd50f4c5e|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_edge_clearance|200000000|63000000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|74608f4f-742e-4b35-8d64-8c8eeb2f824c",
+          ""
+        ],
+        [
+          "silk_edge_clearance|200000000|71220000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|536e934b-041c-43ea-9c9a-cd31a0742d92",
+          ""
+        ],
+        [
+          "silk_overlap|132513954|53298623|4e1fa2a1-0219-4bcb-917c-83ddafbf02f9|92f2cda6-f12b-4042-8176-b1ebd577c5d7",
           ""
         ]
       ],
@@ -492,7 +496,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LEOS-stack-template.kicad_pro",
+    "filename": "LEOS-sensor.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -514,25 +518,6 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
-      },
-      {
-        "clearance": 0.1,
-        "name": "5V",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.75,
-        "via_drill": 0.3
-      },
-      {
-        "clearance": 0.2,
-        "diff_pair_width": 0.25,
-        "name": "CAN",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25
       }
     ],
     "meta": {
@@ -669,11 +654,17 @@
           "label": "Description",
           "name": "Description",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
@@ -730,6 +721,14 @@
     [
       "341d819d-3d1a-4f8b-94f1-4c6aaa16d806",
       "Connectors"
+    ],
+    [
+      "521a35f9-8262-4e8f-ba5e-43bae81742e5",
+      "Relays"
+    ],
+    [
+      "db9162a5-28bb-4dfc-bc5b-5ce27c238ba1",
+      "IO Headers"
     ]
   ],
   "text_variables": {}
