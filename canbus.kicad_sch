@@ -2748,7 +2748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "490-5798-1-ND"
+		(property "Digikey" "1276-CL10B104KB8NNNLCT-ND"
 			(at 91.44 48.26 0)
 			(effects
 				(font
@@ -3275,7 +3275,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "490-5798-1-ND"
+		(property "Digikey" "1276-CL10B104KB8NNNLCT-ND"
 			(at 127 48.26 0)
 			(effects
 				(font
@@ -4106,7 +4106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "490-5798-1-ND"
+		(property "Digikey" "1276-CL10B104KB8NNNLCT-ND"
 			(at 72.39 48.26 0)
 			(effects
 				(font
